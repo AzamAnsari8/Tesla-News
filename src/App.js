@@ -60,7 +60,7 @@ function App() {
                 url={item.url}
                 date={item.publishedAt}
                 authorName={item.author}
-                onDelete={handleDelete}
+                onDelete={() => handleDelete(item.url)}
               />
             ))
           ) : (
