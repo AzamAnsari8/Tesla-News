@@ -22,7 +22,7 @@ function App() {
       .catch(error => {
         console.error('Error fetching data:', error); // Handle errors
       });
-  }, []);
+  }, [apiKey]);
 
   useEffect(() => {
     // Update filteredData when searchQuery changes
